@@ -8,7 +8,7 @@ const UrlForm = ({ handleSubmit }) => {
   return (
     <div>
       <form onSubmit={event => handleSubmit(event, url)}>
-        <p>URL: <input type='text' value={url} onChange={({ target }) => setUrl(target.value)}></input></p>
+        <p>URL: <input placeholder='http://www...' type='text' value={url} onChange={({ target }) => setUrl(target.value)}></input></p>
         <button>Convert to shortened Url</button>
       </form>
     </div>
